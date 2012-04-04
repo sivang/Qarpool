@@ -1,0 +1,18 @@
+{
+    "name": "party_animal",
+    "version" : "0.0.6",
+    "private" : true,
+    "dependencies":{
+        "express": "",
+        "mongoose" : "",
+        "connect-mongo": "",
+        "jest" : "",
+        "sji" : "",
+        "underscore" : "",
+        "async" : "",
+        "j-forms" : ">= 0.0.41",
+        "admin-with-forms" : "",
+        "knox" : ""
+        }
+
+}
