@@ -1,6 +1,9 @@
 var express = require("express");
 var mongoose = require("mongoose");
 var connect_mongo = require("connect-mongo");
+var resources = require('./resources');
+var jest = require("jest");
+
 
 var configuration = {
     db : "pa",
@@ -29,10 +32,9 @@ app.configure(function(){
 
 });
 
-app.get('/',function(req,res)
-{
-   res.send('hi');
-});
+
+var api = new jest.Api('/api/v1', app);
+api.register('ride',);
 
 app.listen(8000);
 

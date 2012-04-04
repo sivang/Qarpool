@@ -5,12 +5,9 @@ var RideSchema = new mongoose.Schema({
     point_to: {lat: Number, long: Number},
     place_from: String,
     place_to: String,
-    date: Date.now,
-    recurrent_on: []
+    date: {type: Date, 'default' : Date.now}
 });
 
-module.exports = {
-    Ride: mongoose.model('ride', RideSchema)
+module.exports.models = {
+    ride: mongoose.model('ride', RideSchema)
 };
-
-
