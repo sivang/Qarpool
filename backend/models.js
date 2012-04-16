@@ -1,5 +1,6 @@
 var mongoose = require("mongoose");
 
+
 var RideSchema = new mongoose.Schema({
     point_from: {lat: Number, long: Number},
     point_to: {lat: Number, long: Number},
@@ -8,6 +9,6 @@ var RideSchema = new mongoose.Schema({
     date: {type: Date, 'default' : Date.now}
 });
 
-module.exports.models = {
+module.exports = {
     ride: mongoose.model('ride', RideSchema)
 };
